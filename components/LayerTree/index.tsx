@@ -48,7 +48,7 @@ export const LayerTree = ({
       )}
       <ul className={getClassName()}>
         {zoneContent.length === 0 && (
-          <div className={getClassName("helper")}>No items</div>
+          <div className={getClassName("helper")}>İçerik yok</div>
         )}
         {zoneContent.map((item, i) => {
           const isSelected =

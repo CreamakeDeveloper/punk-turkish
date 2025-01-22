@@ -6165,7 +6165,7 @@ var LayerTree = ({
       label
     ] }),
     /* @__PURE__ */ jsxs16("ul", { className: getClassName24(), children: [
-      zoneContent.length === 0 && /* @__PURE__ */ jsx34("div", { className: getClassName24("helper"), children: "No items" }),
+      zoneContent.length === 0 && /* @__PURE__ */ jsx34("div", { className: getClassName24("helper"), children: "\u0130\xE7erik yok" }),
       zoneContent.map((item, i) => {
         var _a;
         const isSelected = (itemSelector == null ? void 0 : itemSelector.index) === i && (itemSelector.zone === zone || itemSelector.zone === rootDroppableId && !zone);
