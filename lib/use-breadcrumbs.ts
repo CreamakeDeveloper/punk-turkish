@@ -22,7 +22,7 @@ export const convertPathDataToBreadcrumbs = (
   const currentPathData =
     pathData && id && pathData[id]
       ? { ...pathData[id] }
-      : { label: "Page", path: [] };
+      : { label: "Sayfa", path: [] };
 
   if (!id) {
     return [];
@@ -34,7 +34,7 @@ export const convertPathDataToBreadcrumbs = (
     if (area === rootDroppableId) {
       return [
         {
-          label: "Page",
+          label: "Sayfa",
           selector: null,
         },
       ];

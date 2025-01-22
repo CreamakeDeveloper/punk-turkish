@@ -561,12 +561,12 @@ export const DraggableComponent = ({
                   label={DEBUG ? id : label}
                 >
                   {permissions.duplicate && (
-                    <ActionBar.Action onClick={onDuplicate} label="Duplicate">
+                    <ActionBar.Action onClick={onDuplicate} label="Kopyala">
                       <Copy size={16} />
                     </ActionBar.Action>
                   )}
                   {permissions.delete && (
-                    <ActionBar.Action onClick={onDelete} label="Delete">
+                    <ActionBar.Action onClick={onDelete} label="Sil">
                       <Trash size={16} />
                     </ActionBar.Action>
                   )}

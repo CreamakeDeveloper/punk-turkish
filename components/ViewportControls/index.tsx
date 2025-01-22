@@ -91,7 +91,7 @@ export const ViewportControls = ({
           : [
               {
                 value: autoZoom,
-                label: `${(autoZoom * 100).toFixed(0)}% (Auto)`,
+                label: `${(autoZoom * 100).toFixed(0)}% (Otomatik)`,
               },
             ]),
       ]
@@ -109,8 +109,8 @@ export const ViewportControls = ({
           width={viewport.width}
           title={
             viewport.label
-              ? `Switch to ${viewport.label} viewport`
-              : "Switch viewport"
+              ? `Görünüm penceresini ${viewport.label} olarak değiştir`
+              : "Görünüm penceresini değiştir"
           }
           onClick={onViewportChange}
         >
@@ -121,7 +121,7 @@ export const ViewportControls = ({
       ))}
       <div className={getClassName("divider")} />
       <IconButton
-        title="Zoom viewport out"
+        title="Görünüm penceresini uzaklaştır"
         disabled={zoom <= zoomOptions[0]?.value}
         onClick={(e) => {
           e.stopPropagation();
@@ -138,7 +138,7 @@ export const ViewportControls = ({
         <ZoomOut size={16} />
       </IconButton>
       <IconButton
-        title="Zoom viewport in"
+        title="Görünüm penceresini yakınlaştır"
         disabled={zoom >= zoomOptions[zoomOptions.length - 1]?.value}
         onClick={(e) => {
           e.stopPropagation();

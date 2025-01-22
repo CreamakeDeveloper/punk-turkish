@@ -472,7 +472,7 @@ export function Puck<
                         </div>
                         <div className={getLayoutClassName("headerTitle")}>
                           <Heading rank="2" size="xs">
-                            {headerTitle || rootProps.title || "Page"}
+                            {headerTitle || rootProps.title || "Sayfa"}
                             {headerPath && (
                               <>
                                 {" "}

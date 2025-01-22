@@ -536,9 +536,9 @@ function getItem(selector, data, dynamicProps = {}) {
 
 // components/ViewportControls/default-viewports.ts
 var defaultViewports = [
-  { width: 360, height: "auto", icon: "Smartphone", label: "Small" },
-  { width: 768, height: "auto", icon: "Tablet", label: "Medium" },
-  { width: 1280, height: "auto", icon: "Monitor", label: "Large" }
+  { width: 360, height: "auto", icon: "Smartphone", label: "Mobil" },
+  { width: 768, height: "auto", icon: "Tablet", label: "Tablet" },
+  { width: 1280, height: "auto", icon: "Monitor", label: "Bilgisayar" }
 ];
 
 // lib/use-resolved-permissions.ts
@@ -1204,7 +1204,7 @@ var ArrayField = ({
                                               )
                                             );
                                           },
-                                          title: "Duplicate",
+                                          title: "Kopyala",
                                           children: /* @__PURE__ */ jsx8(Copy, { size: 16 })
                                         }
                                       ) }),
@@ -1228,7 +1228,7 @@ var ArrayField = ({
                                               })
                                             );
                                           },
-                                          title: "Delete",
+                                          title: "Sil",
                                           children: /* @__PURE__ */ jsx8(Trash, { size: 16 })
                                         }
                                       ) })
@@ -3090,8 +3090,8 @@ var DraggableComponent = ({
                             parentAction,
                             label: DEBUG2 ? id : label,
                             children: [
-                              permissions.duplicate && /* @__PURE__ */ jsx21(ActionBar.Action, { onClick: onDuplicate, label: "Duplicate", children: /* @__PURE__ */ jsx21(Copy, { size: 16 }) }),
-                              permissions.delete && /* @__PURE__ */ jsx21(ActionBar.Action, { onClick: onDelete, label: "Delete", children: /* @__PURE__ */ jsx21(Trash, { size: 16 }) })
+                              permissions.duplicate && /* @__PURE__ */ jsx21(ActionBar.Action, { onClick: onDuplicate, label: "Kopyala", children: /* @__PURE__ */ jsx21(Copy, { size: 16 }) }),
+                              permissions.delete && /* @__PURE__ */ jsx21(ActionBar.Action, { onClick: onDelete, label: "Sil", children: /* @__PURE__ */ jsx21(Trash, { size: 16 }) })
                             ]
                           }
                         )
@@ -5052,7 +5052,7 @@ var styles_module_default13 = { "SidebarSection": "_SidebarSection_125qe_1", "Si
 import { useContext as useContext8, useMemo as useMemo10 } from "react";
 var convertPathDataToBreadcrumbs = (selectedItem, pathData, data) => {
   const id = selectedItem ? selectedItem == null ? void 0 : selectedItem.props.id : "";
-  const currentPathData = pathData && id && pathData[id] ? __spreadValues({}, pathData[id]) : { label: "Page", path: [] };
+  const currentPathData = pathData && id && pathData[id] ? __spreadValues({}, pathData[id]) : { label: "Sayfa", path: [] };
   if (!id) {
     return [];
   }
@@ -5061,7 +5061,7 @@ var convertPathDataToBreadcrumbs = (selectedItem, pathData, data) => {
     if (area === rootDroppableId) {
       return [
         {
-          label: "Page",
+          label: "Sayfa",
           selector: null
         }
       ];
@@ -5205,8 +5205,8 @@ function MenuBar({
       },
       children: /* @__PURE__ */ jsxs13("div", { className: getClassName20("inner"), children: [
         /* @__PURE__ */ jsxs13("div", { className: getClassName20("history"), children: [
-          /* @__PURE__ */ jsx26(IconButton, { title: "undo", disabled: !hasPast, onClick: back, children: /* @__PURE__ */ jsx26(Undo2, { size: 21 }) }),
-          /* @__PURE__ */ jsx26(IconButton, { title: "redo", disabled: !hasFuture, onClick: forward, children: /* @__PURE__ */ jsx26(Redo2, { size: 21 }) })
+          /* @__PURE__ */ jsx26(IconButton, { title: "geri", disabled: !hasPast, onClick: back, children: /* @__PURE__ */ jsx26(Undo2, { size: 21 }) }),
+          /* @__PURE__ */ jsx26(IconButton, { title: "ileri", disabled: !hasFuture, onClick: forward, children: /* @__PURE__ */ jsx26(Redo2, { size: 21 }) })
         ] }),
         /* @__PURE__ */ jsx26(Fragment7, { children: renderHeaderActions && renderHeaderActions({
           state: appState,
@@ -6630,7 +6630,7 @@ var ViewportControls = ({
       ...defaultsContainAutoZoom ? [] : [
         {
           value: autoZoom,
-          label: `${(autoZoom * 100).toFixed(0)}% (Auto)`
+          label: `${(autoZoom * 100).toFixed(0)}% (Otomatik)`
         }
       ]
     ].filter((a) => a.value <= autoZoom).sort((a, b) => a.value > b.value ? 1 : -1),
@@ -6642,7 +6642,7 @@ var ViewportControls = ({
       {
         height: viewport.height,
         width: viewport.width,
-        title: viewport.label ? `Switch to ${viewport.label} viewport` : "Switch viewport",
+        title: viewport.label ? `G\xF6r\xFCn\xFCm penceresini ${viewport.label} olarak de\u011Fi\u015Ftir` : "G\xF6r\xFCn\xFCm penceresini de\u011Fi\u015Ftir",
         onClick: onViewportChange,
         children: typeof viewport.icon === "string" ? icons[viewport.icon] || viewport.icon : viewport.icon || icons.Smartphone
       },
@@ -6652,7 +6652,7 @@ var ViewportControls = ({
     /* @__PURE__ */ jsx36(
       IconButton,
       {
-        title: "Zoom viewport out",
+        title: "G\xF6r\xFCn\xFCm penceresini uzakla\u015Ft\u0131r",
         disabled: zoom <= ((_a = zoomOptions[0]) == null ? void 0 : _a.value),
         onClick: (e) => {
           e.stopPropagation();
@@ -6669,7 +6669,7 @@ var ViewportControls = ({
     /* @__PURE__ */ jsx36(
       IconButton,
       {
-        title: "Zoom viewport in",
+        title: "G\xF6r\xFCn\xFCm penceresini yak\u0131nla\u015Ft\u0131r",
         disabled: zoom >= ((_b = zoomOptions[zoomOptions.length - 1]) == null ? void 0 : _b.value),
         onClick: (e) => {
           e.stopPropagation();
@@ -7274,7 +7274,7 @@ function Puck({
                       )
                     ] }),
                     /* @__PURE__ */ jsx39("div", { className: getLayoutClassName("headerTitle"), children: /* @__PURE__ */ jsxs20(Heading, { rank: "2", size: "xs", children: [
-                      headerTitle || rootProps.title || "Page",
+                      headerTitle || rootProps.title || "Sayfa",
                       headerPath && /* @__PURE__ */ jsxs20(Fragment15, { children: [
                         " ",
                         /* @__PURE__ */ jsx39(

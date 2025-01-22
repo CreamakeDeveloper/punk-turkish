@@ -214,7 +214,7 @@ export const ArrayField = ({
                                     )
                                   );
                                 }}
-                                title="Duplicate"
+                                title="Kopyala"
                               >
                                 <Copy size={16} />
                               </IconButton>
@@ -246,7 +246,7 @@ export const ArrayField = ({
                                     })
                                   );
                                 }}
-                                title="Delete"
+                                title="Sil"
                               >
                                 <Trash size={16} />
                               </IconButton>
