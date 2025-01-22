@@ -7352,7 +7352,7 @@ function Puck({
                         onPublish && onPublish(data);
                       },
                       icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Globe, { size: "14px" }),
-                      children: "Publish"
+                      children: "Kaydet"
                     }
                   ) }) }),
                   children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("header", { className: getLayoutClassName("header"), children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: getLayoutClassName("headerInner"), children: [
@@ -7367,7 +7367,7 @@ function Puck({
                               onClick: () => {
                                 toggleSidebars("left");
                               },
-                              title: "Toggle left sidebar",
+                              title: "A\xE7/Kapa Sol Alan",
                               children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(PanelLeft, { focusable: "false" })
                             }
                           )
@@ -7383,7 +7383,7 @@ function Puck({
                               onClick: () => {
                                 toggleSidebars("right");
                               },
-                              title: "Toggle right sidebar",
+                              title: "A\xE7/Kapa Sa\u011F Alan",
                               children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(PanelRight, { focusable: "false" })
                             }
                           )
@@ -7410,7 +7410,7 @@ function Puck({
                           onClick: () => {
                             return setMenuOpen(!menuOpen);
                           },
-                          title: "Toggle menu bar",
+                          title: "A\xE7/Kapa Men\xFC Alan\u0131",
                           children: menuOpen ? /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(ChevronUp, { focusable: "false" }) : /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(ChevronDown, { focusable: "false" })
                         }
                       ) }),
@@ -7449,7 +7449,7 @@ function Puck({
                   noPadding: true,
                   noBorderTop: true,
                   showBreadcrumbs: true,
-                  title: selectedItem ? selectedComponentLabel : "Page",
+                  title: selectedItem ? selectedComponentLabel : "Sayfa",
                   children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Fields, {})
                 }
               ) })
