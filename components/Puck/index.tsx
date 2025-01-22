@@ -436,7 +436,7 @@ export function Puck<
                             }}
                             icon={<Globe size="14px" />}
                           >
-                            Publish
+                            Kaydet
                           </Button>
                         </CustomHeaderActions>
                       </>
@@ -452,7 +452,7 @@ export function Puck<
                               onClick={() => {
                                 toggleSidebars("left");
                               }}
-                              title="Toggle left sidebar"
+                              title="Aç/Kapa Sol Alan"
                             >
                               <PanelLeft focusable="false" />
                             </IconButton>
@@ -464,7 +464,7 @@ export function Puck<
                               onClick={() => {
                                 toggleSidebars("right");
                               }}
-                              title="Toggle right sidebar"
+                              title="Aç/Kapa Sağ Alan"
                             >
                               <PanelRight focusable="false" />
                             </IconButton>
@@ -491,7 +491,7 @@ export function Puck<
                               onClick={() => {
                                 return setMenuOpen(!menuOpen);
                               }}
-                              title="Toggle menu bar"
+                              title="Aç/Kapa Menü Alanı"
                             >
                               {menuOpen ? (
                                 <ChevronUp focusable="false" />
@@ -537,7 +537,7 @@ export function Puck<
                       noPadding
                       noBorderTop
                       showBreadcrumbs
-                      title={selectedItem ? selectedComponentLabel : "Page"}
+                      title={selectedItem ? selectedComponentLabel : "Sayfa"}
                     >
                       <Fields />
                     </SidebarSection>
