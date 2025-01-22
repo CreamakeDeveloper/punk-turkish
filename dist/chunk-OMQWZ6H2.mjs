@@ -1,11 +1,7 @@
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
 var __typeError = (msg) => {
@@ -36,28 +32,6 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-var __esm = (fn, res) => function __init() {
-  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
-};
-var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
 var __accessCheck = (obj, member, msg) => member.has(obj) || __typeError("Cannot " + msg);
 var __privateGet = (obj, member, getter) => (__accessCheck(obj, member, "read from private field"), getter ? getter.call(obj) : member.get(obj));
 var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
@@ -83,22 +57,10 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// ../tsup-config/react-import.js
+// tsup-config/react-import.js
 import React from "react";
-var init_react_import = __esm({
-  "../tsup-config/react-import.js"() {
-    "use strict";
-  }
-});
-
-// lib/resolve-all-data.ts
-init_react_import();
-
-// lib/resolve-component-data.ts
-init_react_import();
 
 // lib/get-changed.ts
-init_react_import();
 var getChanged = (newItem, oldItem) => {
   return newItem ? Object.keys(newItem.props || {}).reduce((acc, item) => {
     const newItemProps = (newItem == null ? void 0 : newItem.props) || {};
@@ -154,7 +116,6 @@ var resolveComponentData = (item, config, onResolveStart, onResolveEnd) => __asy
 });
 
 // lib/resolve-root-data.ts
-init_react_import();
 var cache2 = {};
 function resolveRootData(data, config) {
   return __async(this, null, function* () {
@@ -182,7 +143,6 @@ function resolveRootData(data, config) {
 }
 
 // lib/default-data.ts
-init_react_import();
 var defaultData = (data) => __spreadProps(__spreadValues({}, data), {
   root: data.root || {},
   content: data.content || []
@@ -219,11 +179,9 @@ function resolveAllData(data, config, onResolveStart, onResolveEnd) {
 }
 
 // lib/root-droppable-id.ts
-init_react_import();
 var rootDroppableId = "default-zone";
 
 // lib/setup-zone.ts
-init_react_import();
 var setupZone = (data, zoneKey) => {
   if (zoneKey === rootDroppableId) {
     return data;
@@ -239,13 +197,10 @@ export {
   __spreadValues,
   __spreadProps,
   __objRest,
-  __commonJS,
-  __toESM,
   __privateGet,
   __privateAdd,
   __privateSet,
   __async,
-  init_react_import,
   rootDroppableId,
   setupZone,
   getChanged,

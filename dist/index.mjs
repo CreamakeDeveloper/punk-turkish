@@ -1,102 +1,21 @@
 import {
   __async,
-  __commonJS,
   __objRest,
   __privateAdd,
   __privateGet,
   __privateSet,
   __spreadProps,
   __spreadValues,
-  __toESM,
   defaultData,
   getChanged,
-  init_react_import,
   resolveAllData,
   resolveComponentData,
   resolveRootData,
   rootDroppableId,
   setupZone
-} from "./chunk-CHWFBYEM.mjs";
-
-// ../../node_modules/classnames/index.js
-var require_classnames = __commonJS({
-  "../../node_modules/classnames/index.js"(exports, module) {
-    "use strict";
-    init_react_import();
-    (function() {
-      "use strict";
-      var hasOwn = {}.hasOwnProperty;
-      function classNames() {
-        var classes = "";
-        for (var i = 0; i < arguments.length; i++) {
-          var arg = arguments[i];
-          if (arg) {
-            classes = appendClass(classes, parseValue(arg));
-          }
-        }
-        return classes;
-      }
-      function parseValue(arg) {
-        if (typeof arg === "string" || typeof arg === "number") {
-          return arg;
-        }
-        if (typeof arg !== "object") {
-          return "";
-        }
-        if (Array.isArray(arg)) {
-          return classNames.apply(null, arg);
-        }
-        if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) {
-          return arg.toString();
-        }
-        var classes = "";
-        for (var key in arg) {
-          if (hasOwn.call(arg, key) && arg[key]) {
-            classes = appendClass(classes, key);
-          }
-        }
-        return classes;
-      }
-      function appendClass(value, newClass) {
-        if (!newClass) {
-          return value;
-        }
-        if (value) {
-          return value + " " + newClass;
-        }
-        return value + newClass;
-      }
-      if (typeof module !== "undefined" && module.exports) {
-        classNames.default = classNames;
-        module.exports = classNames;
-      } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) {
-        define("classnames", [], function() {
-          return classNames;
-        });
-      } else {
-        window.classNames = classNames;
-      }
-    })();
-  }
-});
-
-// index.ts
-init_react_import();
-
-// types/API/index.ts
-init_react_import();
-
-// types/API/DropZone.ts
-init_react_import();
-
-// types/API/Viewports.ts
-init_react_import();
-
-// types/index.ts
-init_react_import();
+} from "./chunk-OMQWZ6H2.mjs";
 
 // types/API/Overrides.ts
-init_react_import();
 var overrideKeys = [
   "header",
   "headerActions",
@@ -109,30 +28,8 @@ var overrideKeys = [
   "preview"
 ];
 
-// types/AppState.tsx
-init_react_import();
-
-// types/Config.tsx
-init_react_import();
-
-// types/Data.tsx
-init_react_import();
-
-// types/Fields.ts
-init_react_import();
-
-// types/Props.tsx
-init_react_import();
-
-// types/Utils.tsx
-init_react_import();
-
-// components/ActionBar/index.tsx
-init_react_import();
-
 // lib/get-class-name-factory.ts
-init_react_import();
-var import_classnames = __toESM(require_classnames());
+import classnames from "classnames";
 var getClassNameFactory = (rootClass, styles2, config = { baseClass: "" }) => (options = {}) => {
   if (typeof options === "string") {
     const descendant = options;
@@ -148,7 +45,7 @@ var getClassNameFactory = (rootClass, styles2, config = { baseClass: "" }) => (o
       prefixedModifiers[styles2[`${rootClass}--${modifier}`]] = modifiers[modifier];
     }
     const c = styles2[rootClass];
-    return config.baseClass + (0, import_classnames.default)(__spreadValues({
+    return config.baseClass + classnames(__spreadValues({
       [c]: !!c
     }, prefixedModifiers));
   } else {
@@ -157,8 +54,7 @@ var getClassNameFactory = (rootClass, styles2, config = { baseClass: "" }) => (o
 };
 var get_class_name_factory_default = getClassNameFactory;
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ActionBar/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ActionBar/styles.module.css#css-module
 var styles_module_default = { "ActionBar": "_ActionBar_194sn_1", "ActionBar-label": "_ActionBar-label_194sn_18", "ActionBar-action": "_ActionBar-action_194sn_30", "ActionBar-group": "_ActionBar-group_194sn_38" };
 
 // components/ActionBar/index.tsx
@@ -200,11 +96,7 @@ ActionBar.Action = Action;
 ActionBar.Label = Label;
 ActionBar.Group = Group;
 
-// components/AutoField/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/AutoField/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/AutoField/styles.module.css#css-module
 var styles_module_default2 = { "InputWrapper": "_InputWrapper_1h1p1_1", "Input-label": "_Input-label_1h1p1_5", "Input-labelIcon": "_Input-labelIcon_1h1p1_14", "Input-disabledIcon": "_Input-disabledIcon_1h1p1_21", "Input-input": "_Input-input_1h1p1_26", "Input": "_Input_1h1p1_1", "Input--readOnly": "_Input--readOnly_1h1p1_70", "Input-radioGroupItems": "_Input-radioGroupItems_1h1p1_81", "Input-radio": "_Input-radio_1h1p1_81", "Input-radioInner": "_Input-radioInner_1h1p1_98", "Input-radioInput": "_Input-radioInput_1h1p1_143" };
 
 // components/AutoField/index.tsx
@@ -216,36 +108,22 @@ import {
   useState as useState11
 } from "react";
 
-// components/AutoField/fields/index.tsx
-init_react_import();
-
-// components/AutoField/fields/ArrayField/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/AutoField/fields/ArrayField/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/AutoField/fields/ArrayField/styles.module.css#css-module
 var styles_module_default3 = { "ArrayField": "_ArrayField_1jcbq_5", "ArrayField--isDraggingFrom": "_ArrayField--isDraggingFrom_1jcbq_13", "ArrayField-addButton": "_ArrayField-addButton_1jcbq_18", "ArrayField--hasItems": "_ArrayField--hasItems_1jcbq_33", "ArrayFieldItem": "_ArrayFieldItem_1jcbq_63", "ArrayFieldItem--isDragging": "_ArrayFieldItem--isDragging_1jcbq_71", "ArrayFieldItem--isExpanded": "_ArrayFieldItem--isExpanded_1jcbq_81", "ArrayFieldItem-summary": "_ArrayFieldItem-summary_1jcbq_97", "ArrayField--addDisabled": "_ArrayField--addDisabled_1jcbq_128", "ArrayFieldItem-body": "_ArrayFieldItem-body_1jcbq_164", "ArrayFieldItem-fieldset": "_ArrayFieldItem-fieldset_1jcbq_173", "ArrayFieldItem-rhs": "_ArrayFieldItem-rhs_1jcbq_181", "ArrayFieldItem-actions": "_ArrayFieldItem-actions_1jcbq_187" };
 
-// ../../node_modules/lucide-react/dist/esm/lucide-react.js
-init_react_import();
-
-// ../../node_modules/lucide-react/dist/esm/createLucideIcon.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
 import { forwardRef as forwardRef2, createElement as createElement2 } from "react";
 
-// ../../node_modules/lucide-react/dist/esm/shared/src/utils.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/shared/src/utils.js
 var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 var mergeClasses = (...classes) => classes.filter((className, index, array) => {
   return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
 }).join(" ").trim();
 
-// ../../node_modules/lucide-react/dist/esm/Icon.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/Icon.js
 import { forwardRef, createElement } from "react";
 
-// ../../node_modules/lucide-react/dist/esm/defaultAttributes.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/defaultAttributes.js
 var defaultAttributes = {
   xmlns: "http://www.w3.org/2000/svg",
   width: 24,
@@ -258,7 +136,7 @@ var defaultAttributes = {
   strokeLinejoin: "round"
 };
 
-// ../../node_modules/lucide-react/dist/esm/Icon.js
+// node_modules/lucide-react/dist/esm/Icon.js
 var Icon = forwardRef(
   (_a, ref) => {
     var _b = _a, {
@@ -297,7 +175,7 @@ var Icon = forwardRef(
   }
 );
 
-// ../../node_modules/lucide-react/dist/esm/createLucideIcon.js
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
 var createLucideIcon = (iconName, iconNode) => {
   const Component = forwardRef2(
     (_a, ref) => {
@@ -313,61 +191,52 @@ var createLucideIcon = (iconName, iconNode) => {
   return Component;
 };
 
-// ../../node_modules/lucide-react/dist/esm/icons/chevron-down.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/chevron-down.js
 var ChevronDown = createLucideIcon("ChevronDown", [
   ["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/chevron-right.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/chevron-right.js
 var ChevronRight = createLucideIcon("ChevronRight", [
   ["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/chevron-up.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/chevron-up.js
 var ChevronUp = createLucideIcon("ChevronUp", [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/circle-check-big.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/circle-check-big.js
 var CircleCheckBig = createLucideIcon("CircleCheckBig", [
   ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
   ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/copy.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/copy.js
 var Copy = createLucideIcon("Copy", [
   ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
   ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/corner-left-up.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/corner-left-up.js
 var CornerLeftUp = createLucideIcon("CornerLeftUp", [
   ["polyline", { points: "14 9 9 4 4 9", key: "m9oyvo" }],
   ["path", { d: "M20 20h-7a4 4 0 0 1-4-4V4", key: "1blwi3" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/ellipsis-vertical.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/ellipsis-vertical.js
 var EllipsisVertical = createLucideIcon("EllipsisVertical", [
   ["circle", { cx: "12", cy: "12", r: "1", key: "41hilf" }],
   ["circle", { cx: "12", cy: "5", r: "1", key: "gxeob9" }],
   ["circle", { cx: "12", cy: "19", r: "1", key: "lyex9k" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/globe.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/globe.js
 var Globe = createLucideIcon("Globe", [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
   ["path", { d: "M2 12h20", key: "9i4pu4" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/hash.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/hash.js
 var Hash = createLucideIcon("Hash", [
   ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
   ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
@@ -375,8 +244,7 @@ var Hash = createLucideIcon("Hash", [
   ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/layers.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/layers.js
 var Layers = createLucideIcon("Layers", [
   [
     "path",
@@ -401,8 +269,7 @@ var Layers = createLucideIcon("Layers", [
   ]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/layout-grid.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/layout-grid.js
 var LayoutGrid = createLucideIcon("LayoutGrid", [
   ["rect", { width: "7", height: "7", x: "3", y: "3", rx: "1", key: "1g98yp" }],
   ["rect", { width: "7", height: "7", x: "14", y: "3", rx: "1", key: "6d4xhi" }],
@@ -410,15 +277,13 @@ var LayoutGrid = createLucideIcon("LayoutGrid", [
   ["rect", { width: "7", height: "7", x: "3", y: "14", rx: "1", key: "1bb6yr" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/link.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/link.js
 var Link = createLucideIcon("Link", [
   ["path", { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71", key: "1cjeqo" }],
   ["path", { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71", key: "19qd67" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/list.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/list.js
 var List = createLucideIcon("List", [
   ["path", { d: "M3 12h.01", key: "nlz23k" }],
   ["path", { d: "M3 18h.01", key: "1tta3j" }],
@@ -428,65 +293,56 @@ var List = createLucideIcon("List", [
   ["path", { d: "M8 6h13", key: "ik3vkj" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/lock-open.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/lock-open.js
 var LockOpen = createLucideIcon("LockOpen", [
   ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
   ["path", { d: "M7 11V7a5 5 0 0 1 9.9-1", key: "1mm8w8" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/lock.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/lock.js
 var Lock = createLucideIcon("Lock", [
   ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
   ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/monitor.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/monitor.js
 var Monitor = createLucideIcon("Monitor", [
   ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
   ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
   ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/panel-left.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/panel-left.js
 var PanelLeft = createLucideIcon("PanelLeft", [
   ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }],
   ["path", { d: "M9 3v18", key: "fh3hqa" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/panel-right.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/panel-right.js
 var PanelRight = createLucideIcon("PanelRight", [
   ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }],
   ["path", { d: "M15 3v18", key: "14nvp0" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/plus.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/plus.js
 var Plus = createLucideIcon("Plus", [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "M12 5v14", key: "s699le" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/redo-2.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/redo-2.js
 var Redo2 = createLucideIcon("Redo2", [
   ["path", { d: "m15 14 5-5-5-5", key: "12vg1m" }],
   ["path", { d: "M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13", key: "6uklza" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/search.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/search.js
 var Search = createLucideIcon("Search", [
   ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
   ["path", { d: "m21 21-4.3-4.3", key: "1qie3q" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/sliders-horizontal.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/sliders-horizontal.js
 var SlidersHorizontal = createLucideIcon("SlidersHorizontal", [
   ["line", { x1: "21", x2: "14", y1: "4", y2: "4", key: "obuewd" }],
   ["line", { x1: "10", x2: "3", y1: "4", y2: "4", key: "1q6298" }],
@@ -499,45 +355,39 @@ var SlidersHorizontal = createLucideIcon("SlidersHorizontal", [
   ["line", { x1: "16", x2: "16", y1: "18", y2: "22", key: "1lctlv" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/smartphone.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/smartphone.js
 var Smartphone = createLucideIcon("Smartphone", [
   ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
   ["path", { d: "M12 18h.01", key: "mhygvu" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/tablet.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/tablet.js
 var Tablet = createLucideIcon("Tablet", [
   ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2", key: "76otgf" }],
   ["line", { x1: "12", x2: "12.01", y1: "18", y2: "18", key: "1dp563" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/trash.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/trash.js
 var Trash = createLucideIcon("Trash", [
   ["path", { d: "M3 6h18", key: "d0wm0j" }],
   ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
   ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/type.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/type.js
 var Type = createLucideIcon("Type", [
   ["polyline", { points: "4 7 4 4 20 4 20 7", key: "1nosan" }],
   ["line", { x1: "9", x2: "15", y1: "20", y2: "20", key: "swin9y" }],
   ["line", { x1: "12", x2: "12", y1: "4", y2: "20", key: "1tx1rr" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/undo-2.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/undo-2.js
 var Undo2 = createLucideIcon("Undo2", [
   ["path", { d: "M9 14 4 9l5-5", key: "102s5s" }],
   ["path", { d: "M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11", key: "f3b9sd" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/zoom-in.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/zoom-in.js
 var ZoomIn = createLucideIcon("ZoomIn", [
   ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
   ["line", { x1: "21", x2: "16.65", y1: "21", y2: "16.65", key: "13gj7c" }],
@@ -545,36 +395,20 @@ var ZoomIn = createLucideIcon("ZoomIn", [
   ["line", { x1: "8", x2: "14", y1: "11", y2: "11", key: "durymu" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/zoom-out.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/zoom-out.js
 var ZoomOut = createLucideIcon("ZoomOut", [
   ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
   ["line", { x1: "21", x2: "16.65", y1: "21", y2: "16.65", key: "13gj7c" }],
   ["line", { x1: "8", x2: "14", y1: "11", y2: "11", key: "durymu" }]
 ]);
 
-// components/IconButton/index.ts
-init_react_import();
-
 // components/IconButton/IconButton.tsx
-init_react_import();
 import { useState } from "react";
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/IconButton/IconButton.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/IconButton/IconButton.module.css#css-module
 var IconButton_module_default = { "IconButton": "_IconButton_swpni_1", "IconButton--disabled": "_IconButton--disabled_swpni_20", "IconButton-title": "_IconButton-title_swpni_33" };
 
-// components/Loader/index.tsx
-init_react_import();
-
-// lib/index.ts
-init_react_import();
-
-// lib/filter.ts
-init_react_import();
-
 // lib/reorder.ts
-init_react_import();
 var reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list);
   const [removed] = result.splice(startIndex, 1);
@@ -583,7 +417,6 @@ var reorder = (list, startIndex, endIndex) => {
 };
 
 // lib/replace.ts
-init_react_import();
 var replace = (list, index, newItem) => {
   const result = Array.from(list);
   result.splice(index, 1);
@@ -591,8 +424,7 @@ var replace = (list, index, newItem) => {
   return result;
 };
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Loader/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Loader/styles.module.css#css-module
 var styles_module_default4 = { "Loader": "_Loader_nacdm_13", "loader-animation": "_loader-animation_nacdm_1" };
 
 // components/Loader/index.tsx
@@ -676,11 +508,7 @@ var IconButton = ({
 // components/AutoField/fields/ArrayField/index.tsx
 import { useCallback as useCallback3, useEffect as useEffect4, useState as useState6 } from "react";
 
-// components/DragIcon/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/DragIcon/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/DragIcon/styles.module.css#css-module
 var styles_module_default5 = { "DragIcon": "_DragIcon_17p8x_1", "DragIcon--disabled": "_DragIcon--disabled_17p8x_8" };
 
 // components/DragIcon/index.tsx
@@ -689,7 +517,6 @@ var getClassName4 = get_class_name_factory_default("DragIcon", styles_module_def
 var DragIcon = ({ isDragDisabled }) => /* @__PURE__ */ jsx4("div", { className: getClassName4({ disabled: isDragDisabled }), children: /* @__PURE__ */ jsx4("svg", { viewBox: "0 0 20 20", width: "12", fill: "currentColor", children: /* @__PURE__ */ jsx4("path", { d: "M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z" }) }) });
 
 // components/Puck/context.tsx
-init_react_import();
 import {
   createContext,
   useContext,
@@ -698,7 +525,6 @@ import {
 } from "react";
 
 // lib/get-item.ts
-init_react_import();
 function getItem(selector, data, dynamicProps = {}) {
   if (!selector.zone || selector.zone === rootDroppableId) {
     const item2 = data.content[selector.index];
@@ -709,7 +535,6 @@ function getItem(selector, data, dynamicProps = {}) {
 }
 
 // components/ViewportControls/default-viewports.ts
-init_react_import();
 var defaultViewports = [
   { width: 360, height: "auto", icon: "Smartphone", label: "Small" },
   { width: 768, height: "auto", icon: "Tablet", label: "Medium" },
@@ -717,11 +542,9 @@ var defaultViewports = [
 ];
 
 // lib/use-resolved-permissions.ts
-init_react_import();
 import { useCallback, useEffect, useState as useState2 } from "react";
 
 // lib/flatten-data.ts
-init_react_import();
 var flattenData = (data) => {
   return Object.keys(data.zones || {}).reduce(
     (acc, zone) => [...acc, ...data.zones[zone]],
@@ -835,11 +658,9 @@ var useResolvedPermissions = (config, appState, globalPermissions, setComponentL
 };
 
 // lib/use-resolved-data.ts
-init_react_import();
 import { useCallback as useCallback2, useEffect as useEffect2, useState as useState3 } from "react";
 
 // lib/apply-dynamic-props.ts
-init_react_import();
 var applyDynamicProps = (data, dynamicProps, rootData) => {
   return __spreadProps(__spreadValues({}, data), {
     root: __spreadValues(__spreadValues({}, data.root), rootData ? rootData : {}),
@@ -1082,12 +903,10 @@ function useAppContext() {
 }
 
 // components/Sortable/index.tsx
-init_react_import();
 import { DragDropProvider } from "@dnd-kit/react";
 import { useState as useState5 } from "react";
 
 // lib/dnd/dnd-kit/safe.ts
-init_react_import();
 import {
   useDraggable,
   useDroppable
@@ -1167,7 +986,6 @@ var Sortable = ({
 };
 
 // components/AutoField/context.tsx
-init_react_import();
 import { createContext as createContext2, useContext as useContext2, useMemo } from "react";
 import { jsx as jsx7 } from "react/jsx-runtime";
 var NestedFieldContext = createContext2({});
@@ -1497,7 +1315,6 @@ var ArrayField = ({
 };
 
 // components/AutoField/fields/DefaultField/index.tsx
-init_react_import();
 import { Fragment as Fragment2, jsx as jsx9, jsxs as jsxs4 } from "react/jsx-runtime";
 var getClassName6 = get_class_name_factory_default("Input", styles_module_default2);
 var DefaultField = ({
@@ -1555,11 +1372,9 @@ var DefaultField = ({
 };
 
 // components/AutoField/fields/ExternalField/index.tsx
-init_react_import();
 import { useEffect as useEffect8 } from "react";
 
 // components/ExternalInput/index.tsx
-init_react_import();
 import {
   useMemo as useMemo2,
   useEffect as useEffect7,
@@ -1568,16 +1383,13 @@ import {
   isValidElement
 } from "react";
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ExternalInput/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ExternalInput/styles.module.css#css-module
 var styles_module_default6 = { "ExternalInput-actions": "_ExternalInput-actions_8wgzm_1", "ExternalInput-button": "_ExternalInput-button_8wgzm_5", "ExternalInput--dataSelected": "_ExternalInput--dataSelected_8wgzm_24", "ExternalInput--readOnly": "_ExternalInput--readOnly_8wgzm_31", "ExternalInput-detachButton": "_ExternalInput-detachButton_8wgzm_35", "ExternalInput": "_ExternalInput_8wgzm_1", "ExternalInputModal": "_ExternalInputModal_8wgzm_79", "ExternalInputModal-grid": "_ExternalInputModal-grid_8wgzm_89", "ExternalInputModal--filtersToggled": "_ExternalInputModal--filtersToggled_8wgzm_100", "ExternalInputModal-filters": "_ExternalInputModal-filters_8wgzm_105", "ExternalInputModal-masthead": "_ExternalInputModal-masthead_8wgzm_124", "ExternalInputModal-tableWrapper": "_ExternalInputModal-tableWrapper_8wgzm_133", "ExternalInputModal-table": "_ExternalInputModal-table_8wgzm_133", "ExternalInputModal-thead": "_ExternalInputModal-thead_8wgzm_149", "ExternalInputModal-th": "_ExternalInputModal-th_8wgzm_149", "ExternalInputModal-td": "_ExternalInputModal-td_8wgzm_164", "ExternalInputModal-tr": "_ExternalInputModal-tr_8wgzm_169", "ExternalInputModal-tbody": "_ExternalInputModal-tbody_8wgzm_176", "ExternalInputModal--hasData": "_ExternalInputModal--hasData_8wgzm_202", "ExternalInputModal-loadingBanner": "_ExternalInputModal-loadingBanner_8wgzm_206", "ExternalInputModal--isLoading": "_ExternalInputModal--isLoading_8wgzm_223", "ExternalInputModal-searchForm": "_ExternalInputModal-searchForm_8wgzm_227", "ExternalInputModal-search": "_ExternalInputModal-search_8wgzm_227", "ExternalInputModal-searchIcon": "_ExternalInputModal-searchIcon_8wgzm_264", "ExternalInputModal-searchIconText": "_ExternalInputModal-searchIconText_8wgzm_289", "ExternalInputModal-searchInput": "_ExternalInputModal-searchInput_8wgzm_299", "ExternalInputModal-searchActions": "_ExternalInputModal-searchActions_8wgzm_313", "ExternalInputModal-searchActionIcon": "_ExternalInputModal-searchActionIcon_8wgzm_326", "ExternalInputModal-footerContainer": "_ExternalInputModal-footerContainer_8wgzm_330", "ExternalInputModal-footer": "_ExternalInputModal-footer_8wgzm_330" };
 
 // components/Modal/index.tsx
-init_react_import();
 import { useEffect as useEffect5, useState as useState7 } from "react";
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Modal/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Modal/styles.module.css#css-module
 var styles_module_default7 = { "Modal": "_Modal_ikbaj_1", "Modal--isOpen": "_Modal--isOpen_ikbaj_15", "Modal-inner": "_Modal-inner_ikbaj_19" };
 
 // components/Modal/index.tsx
@@ -1609,11 +1421,7 @@ var Modal = ({
   );
 };
 
-// components/Heading/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Heading/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Heading/styles.module.css#css-module
 var styles_module_default8 = { "Heading": "_Heading_qxrry_1", "Heading--xxxxl": "_Heading--xxxxl_qxrry_12", "Heading--xxxl": "_Heading--xxxl_qxrry_18", "Heading--xxl": "_Heading--xxl_qxrry_22", "Heading--xl": "_Heading--xl_qxrry_26", "Heading--l": "_Heading--l_qxrry_30", "Heading--m": "_Heading--m_qxrry_34", "Heading--s": "_Heading--s_qxrry_38", "Heading--xs": "_Heading--xs_qxrry_42" };
 
 // components/Heading/index.tsx
@@ -1632,19 +1440,13 @@ var Heading = ({ children, rank, size = "m" }) => {
   );
 };
 
-// components/Button/index.ts
-init_react_import();
-
 // components/Button/Button.tsx
-init_react_import();
 import { useEffect as useEffect6, useState as useState8 } from "react";
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Button/Button.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Button/Button.module.css#css-module
 var Button_module_default = { "Button": "_Button_1t64k_1", "Button--medium": "_Button--medium_1t64k_29", "Button--large": "_Button--large_1t64k_37", "Button-icon": "_Button-icon_1t64k_44", "Button--primary": "_Button--primary_1t64k_48", "Button--secondary": "_Button--secondary_1t64k_67", "Button--flush": "_Button--flush_1t64k_84", "Button--disabled": "_Button--disabled_1t64k_88", "Button--fullWidth": "_Button--fullWidth_1t64k_95", "Button-spinner": "_Button-spinner_1t64k_100" };
 
 // lib/filter-data-attrs.ts
-init_react_import();
 var dataAttrRe = /^(data-.*)$/;
 var filterDataAttrs = (props) => {
   let filteredProps = {};
@@ -1982,11 +1784,9 @@ var ExternalField = ({
 };
 
 // components/AutoField/fields/RadioField/index.tsx
-init_react_import();
 import { useMemo as useMemo3 } from "react";
 
 // lib/safe-json-parse.ts
-init_react_import();
 var safeJsonParse = (str) => {
   try {
     const jsonValue = JSON.parse(str);
@@ -2058,7 +1858,6 @@ var RadioField = ({
 };
 
 // components/AutoField/fields/SelectField/index.tsx
-init_react_import();
 import { useMemo as useMemo4 } from "react";
 import { jsx as jsx16 } from "react/jsx-runtime";
 var getClassName12 = get_class_name_factory_default("Input", styles_module_default2);
@@ -2117,7 +1916,6 @@ var SelectField = ({
 };
 
 // components/AutoField/fields/TextareaField/index.tsx
-init_react_import();
 import { jsx as jsx17 } from "react/jsx-runtime";
 var getClassName13 = get_class_name_factory_default("Input", styles_module_default2);
 var TextareaField = ({
@@ -2148,11 +1946,7 @@ var TextareaField = ({
 // components/AutoField/index.tsx
 import { useDebouncedCallback } from "use-debounce";
 
-// components/AutoField/fields/ObjectField/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/AutoField/fields/ObjectField/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/AutoField/fields/ObjectField/styles.module.css#css-module
 var styles_module_default9 = { "ObjectField": "_ObjectField_1ua3y_5", "ObjectField-fieldset": "_ObjectField-fieldset_1ua3y_13" };
 
 // components/AutoField/fields/ObjectField/index.tsx
@@ -2223,11 +2017,9 @@ var ObjectField = ({
 };
 
 // lib/use-safe-id.ts
-init_react_import();
 import React2, { useState as useState10 } from "react";
 
 // lib/generate-id.ts
-init_react_import();
 import { v4 as uuidv4 } from "uuid";
 var generateId = (type) => type ? `${type}-${uuidv4()}` : uuidv4();
 
@@ -2418,18 +2210,13 @@ function AutoField(props) {
   return /* @__PURE__ */ jsx19(AutoFieldInternal, __spreadProps(__spreadValues({}, props), { Label: DefaultLabel }));
 }
 
-// components/Drawer/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Drawer/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Drawer/styles.module.css#css-module
 var styles_module_default10 = { "Drawer": "_Drawer_fkqfo_1", "Drawer-draggable": "_Drawer-draggable_fkqfo_8", "Drawer-draggableBg": "_Drawer-draggableBg_fkqfo_12", "Drawer-draggableFg": "_Drawer-draggableFg_fkqfo_21", "DrawerItem-draggable": "_DrawerItem-draggable_fkqfo_25", "DrawerItem--disabled": "_DrawerItem--disabled_fkqfo_38", "DrawerItem": "_DrawerItem_fkqfo_25", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_fkqfo_48", "DrawerItem-name": "_DrawerItem-name_fkqfo_66" };
 
 // components/Drawer/index.tsx
 import { useId as useId2, useMemo as useMemo9, useState as useState18 } from "react";
 
 // components/DragDropContext/index.tsx
-init_react_import();
 import { DragDropProvider as DragDropProvider2 } from "@dnd-kit/react";
 import {
   createContext as createContext4,
@@ -2443,7 +2230,6 @@ import {
 import { AutoScroller, defaultPreset } from "@dnd-kit/dom";
 
 // components/DropZone/index.tsx
-init_react_import();
 import {
   forwardRef as forwardRef3,
   useCallback as useCallback10,
@@ -2454,7 +2240,6 @@ import {
 } from "react";
 
 // components/DraggableComponent/index.tsx
-init_react_import();
 import {
   useCallback as useCallback7,
   useContext as useContext5,
@@ -2464,26 +2249,22 @@ import {
   useState as useState13
 } from "react";
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/DraggableComponent/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/DraggableComponent/styles.module.css#css-module
 var styles_module_default11 = { "DraggableComponent": "_DraggableComponent_1ukn8_1", "DraggableComponent-overlay": "_DraggableComponent-overlay_1ukn8_12", "DraggableComponent-loadingOverlay": "_DraggableComponent-loadingOverlay_1ukn8_29", "DraggableComponent--hover": "_DraggableComponent--hover_1ukn8_45", "DraggableComponent--isLocked": "_DraggableComponent--isLocked_1ukn8_45", "DraggableComponent--isSelected": "_DraggableComponent--isSelected_1ukn8_54", "DraggableComponent-actionsOverlay": "_DraggableComponent-actionsOverlay_1ukn8_66", "DraggableComponent-actions": "_DraggableComponent-actions_1ukn8_66" };
 
 // components/DraggableComponent/index.tsx
 import { createPortal as createPortal2 } from "react-dom";
 
 // lib/dnd/collision/dynamic/index.ts
-init_react_import();
 import {
   CollisionPriority as CollisionPriority7,
   CollisionType as CollisionType7
 } from "@dnd-kit/abstract";
 
 // lib/dnd/collision/directional/index.ts
-init_react_import();
 import { CollisionType } from "@dnd-kit/abstract";
 
 // lib/dnd/collision/collision-debug.ts
-init_react_import();
 var DEBUG = false;
 var debugElements = {};
 var timeout;
@@ -2565,7 +2346,6 @@ var directionalCollision = (input, previous) => {
 };
 
 // lib/dnd/collision/dynamic/get-direction.ts
-init_react_import();
 var getDirection = (dragAxis, delta) => {
   if (dragAxis === "dynamic") {
     if (Math.abs(delta.y) > Math.abs(delta.x)) {
@@ -2580,7 +2360,6 @@ var getDirection = (dragAxis, delta) => {
 };
 
 // lib/dnd/collision/dynamic/get-midpoint-impact.ts
-init_react_import();
 var getMidpointImpact = (dragShape, dropShape, direction, offsetMultiplier = 0) => {
   const dragRect = dragShape.boundingRectangle;
   const dropCenter = dropShape.center;
@@ -2599,7 +2378,6 @@ var getMidpointImpact = (dragShape, dropShape, direction, offsetMultiplier = 0) 
 };
 
 // lib/dnd/collision/dynamic/track-movement-interval.ts
-init_react_import();
 import { Point } from "@dnd-kit/geometry";
 var INTERVAL_SENSITIVITY = 10;
 var intervalCache = {
@@ -2621,8 +2399,7 @@ var trackMovementInterval = (point, dragAxis = "dynamic") => {
   return intervalCache;
 };
 
-// ../../node_modules/@dnd-kit/collision/dist/index.js
-init_react_import();
+// node_modules/@dnd-kit/collision/dist/index.js
 import { CollisionPriority, CollisionType as CollisionType2 } from "@dnd-kit/abstract";
 import { Point as Point2 } from "@dnd-kit/geometry";
 import { CollisionPriority as CollisionPriority2, CollisionType as CollisionType22 } from "@dnd-kit/abstract";
@@ -2703,7 +2480,6 @@ var closestCorners = (input) => {
 };
 
 // lib/dnd/collision/dynamic/store.ts
-init_react_import();
 import { createStore } from "zustand/vanilla";
 var collisionStore = createStore(() => ({
   fallbackEnabled: false
@@ -2810,7 +2586,6 @@ var createDynamicCollisionDetector = (dragAxis, midpointOffset = 0.05) => (input
 };
 
 // lib/get-deep-scroll-position.ts
-init_react_import();
 function getDeepScrollPosition(element) {
   let totalScroll = {
     x: 0,
@@ -2829,7 +2604,6 @@ function getDeepScrollPosition(element) {
 }
 
 // components/DropZone/context.tsx
-init_react_import();
 import {
   createContext as createContext3,
   useCallback as useCallback6,
@@ -2915,7 +2689,6 @@ var DropZoneProvider = ({
 };
 
 // lib/use-context-store.ts
-init_react_import();
 import { useContext as useContext4 } from "react";
 import { useStore } from "zustand";
 import { useShallow } from "zustand/react/shallow";
@@ -3338,12 +3111,10 @@ var DraggableComponent = ({
   );
 };
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/DropZone/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/DropZone/styles.module.css#css-module
 var styles_module_default12 = { "DropZone": "_DropZone_kmkdc_1", "DropZone--isActive": "_DropZone--isActive_kmkdc_10", "DropZone--hasChildren": "_DropZone--hasChildren_kmkdc_14", "DropZone--userIsDragging": "_DropZone--userIsDragging_kmkdc_22", "DropZone--isAreaSelected": "_DropZone--isAreaSelected_kmkdc_26", "DropZone--hoveringOverArea": "_DropZone--hoveringOverArea_kmkdc_27", "DropZone--isRootZone": "_DropZone--isRootZone_kmkdc_27", "DropZone--isDestination": "_DropZone--isDestination_kmkdc_37", "DropZone-item": "_DropZone-item_kmkdc_49", "DropZone-hitbox": "_DropZone-hitbox_kmkdc_53", "DropZone--isEnabled": "_DropZone--isEnabled_kmkdc_61", "DropZone--isAnimating": "_DropZone--isAnimating_kmkdc_70" };
 
 // components/DropZone/lib/use-min-empty-height.ts
-init_react_import();
 import { useEffect as useEffect11, useState as useState14 } from "react";
 var useMinEmptyHeight = ({
   zoneCompound,
@@ -3377,7 +3148,6 @@ var useMinEmptyHeight = ({
 };
 
 // lib/assign-refs.ts
-init_react_import();
 function assignRef(ref, node) {
   if (typeof ref === "function") {
     ref(node);
@@ -3392,11 +3162,9 @@ function assignRefs(refs, node) {
 }
 
 // components/DropZone/lib/use-content-with-preview.ts
-init_react_import();
 import { useEffect as useEffect12, useState as useState15 } from "react";
 
 // lib/dnd/use-rendered-callback.ts
-init_react_import();
 import { useDragDropManager } from "@dnd-kit/react";
 import { useCallback as useCallback8 } from "react";
 function useRenderedCallback(callback, deps) {
@@ -3411,7 +3179,6 @@ function useRenderedCallback(callback, deps) {
 }
 
 // lib/insert.ts
-init_react_import();
 var insert = (list, index, item) => {
   const result = Array.from(list);
   result.splice(index, 0, item);
@@ -3485,7 +3252,6 @@ var useContentWithPreview = (content, zoneCompound) => {
 };
 
 // components/DropZone/lib/use-drag-axis.ts
-init_react_import();
 import { useCallback as useCallback9, useEffect as useEffect13, useState as useState16 } from "react";
 var GRID_DRAG_AXIS = "dynamic";
 var FLEX_ROW_DRAG_AXIS = "x";
@@ -3815,7 +3581,6 @@ var DropZone = forwardRef3(
 );
 
 // lib/get-zone-id.ts
-init_react_import();
 var getZoneId = (zoneCompound) => {
   if (!zoneCompound) {
     return [];
@@ -3827,12 +3592,10 @@ var getZoneId = (zoneCompound) => {
 };
 
 // lib/dnd/NestedDroppablePlugin.ts
-init_react_import();
 import { Plugin } from "@dnd-kit/abstract";
 import { effects } from "@dnd-kit/state";
 
 // lib/throttle.ts
-init_react_import();
 function timeout2(callback, duration) {
   const id = setTimeout(callback, duration);
   return () => clearTimeout(id);
@@ -3858,7 +3621,6 @@ function throttle(func, limit) {
 }
 
 // lib/get-frame.ts
-init_react_import();
 var getFrame = () => {
   if (typeof window === "undefined") return;
   let frameEl = document.querySelector("#preview-frame");
@@ -3869,7 +3631,6 @@ var getFrame = () => {
 };
 
 // lib/global-position.ts
-init_react_import();
 var GlobalPosition = class {
   constructor(target, original) {
     this.scaleFactor = 1;
@@ -4066,17 +3827,7 @@ var createNestedDroppablePlugin = ({ onChange }, id) => class NestedDroppablePlu
   }
 };
 
-// lib/insert-component.ts
-init_react_import();
-
-// reducer/index.ts
-init_react_import();
-
-// reducer/data.ts
-init_react_import();
-
 // lib/remove.ts
-init_react_import();
 var remove = (list, index) => {
   const result = Array.from(list);
   result.splice(index, 1);
@@ -4084,7 +3835,6 @@ var remove = (list, index) => {
 };
 
 // lib/reduce-related-zones.ts
-init_react_import();
 function reduceRelatedZones(item, data, fn) {
   return __spreadProps(__spreadValues({}, data), {
     zones: Object.keys(data.zones || {}).reduce(
@@ -4363,7 +4113,6 @@ function reduceData(data, action, config) {
 }
 
 // reducer/state.ts
-init_react_import();
 var reduceUi = (ui, action) => {
   if (action.type === "setUi") {
     if (typeof action.ui === "object") {
@@ -4383,9 +4132,6 @@ var reduceUi = (ui, action) => {
   }
   return ui;
 };
-
-// reducer/actions.tsx
-init_react_import();
 
 // reducer/index.ts
 function storeInterceptor(reducer, record, onAction) {
@@ -4469,7 +4215,6 @@ import { useDebouncedCallback as useDebouncedCallback2 } from "use-debounce";
 import { isElement as isElement2 } from "@dnd-kit/dom/utilities";
 
 // lib/dnd/PointerSensor.ts
-init_react_import();
 import { batch, effect } from "@dnd-kit/state";
 import { Sensor, configurator } from "@dnd-kit/abstract";
 import {
@@ -5292,7 +5037,6 @@ var Drawer = ({
 Drawer.Item = DrawerItem;
 
 // components/Puck/index.tsx
-init_react_import();
 import {
   useCallback as useCallback18,
   useEffect as useEffect24,
@@ -5301,15 +5045,10 @@ import {
   useState as useState26
 } from "react";
 
-// components/SidebarSection/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/SidebarSection/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/SidebarSection/styles.module.css#css-module
 var styles_module_default13 = { "SidebarSection": "_SidebarSection_125qe_1", "SidebarSection-title": "_SidebarSection-title_125qe_12", "SidebarSection--noBorderTop": "_SidebarSection--noBorderTop_125qe_20", "SidebarSection-content": "_SidebarSection-content_125qe_24", "SidebarSection--noPadding": "_SidebarSection--noPadding_125qe_28", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_125qe_41", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_125qe_70", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_125qe_41", "SidebarSection-heading": "_SidebarSection-heading_125qe_82", "SidebarSection-loadingOverlay": "_SidebarSection-loadingOverlay_125qe_86" };
 
 // lib/use-breadcrumbs.ts
-init_react_import();
 import { useContext as useContext8, useMemo as useMemo10 } from "react";
 var convertPathDataToBreadcrumbs = (selectedItem, pathData, data) => {
   const id = selectedItem ? selectedItem == null ? void 0 : selectedItem.props.id : "";
@@ -5417,7 +5156,6 @@ var SidebarSection = ({
 };
 
 // lib/flush-zones.ts
-init_react_import();
 var flushZones = (appState) => {
   const containsZones = typeof appState.data.zones !== "undefined";
   if (containsZones) {
@@ -5433,11 +5171,7 @@ var flushZones = (appState) => {
   return appState;
 };
 
-// components/MenuBar/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/MenuBar/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/MenuBar/styles.module.css#css-module
 var styles_module_default14 = { "MenuBar": "_MenuBar_8pf8c_1", "MenuBar--menuOpen": "_MenuBar--menuOpen_8pf8c_14", "MenuBar-inner": "_MenuBar-inner_8pf8c_29", "MenuBar-history": "_MenuBar-history_8pf8c_45" };
 
 // components/MenuBar/index.tsx
@@ -5483,26 +5217,19 @@ function MenuBar({
   );
 }
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/styles.module.css#css-module
 var styles_module_default15 = { "Puck": "_Puck_12s9r_19", "Puck-portal": "_Puck-portal_12s9r_24", "PuckLayout-inner": "_PuckLayout-inner_12s9r_31", "PuckLayout--mounted": "_PuckLayout--mounted_12s9r_43", "PuckLayout--leftSideBarVisible": "_PuckLayout--leftSideBarVisible_12s9r_47", "PuckLayout--rightSideBarVisible": "_PuckLayout--rightSideBarVisible_12s9r_53", "PuckLayout-mounted": "_PuckLayout-mounted_12s9r_67", "PuckLayout": "_PuckLayout_12s9r_31", "PuckLayout-header": "_PuckLayout-header_12s9r_108", "PuckLayout-headerInner": "_PuckLayout-headerInner_12s9r_117", "PuckLayout-headerToggle": "_PuckLayout-headerToggle_12s9r_127", "PuckLayout-rightSideBarToggle": "_PuckLayout-rightSideBarToggle_12s9r_134", "PuckLayout-leftSideBarToggle": "_PuckLayout-leftSideBarToggle_12s9r_135", "PuckLayout-headerTitle": "_PuckLayout-headerTitle_12s9r_139", "PuckLayout-headerPath": "_PuckLayout-headerPath_12s9r_143", "PuckLayout-headerTools": "_PuckLayout-headerTools_12s9r_150", "PuckLayout-menuButton": "_PuckLayout-menuButton_12s9r_156", "PuckLayout--menuOpen": "_PuckLayout--menuOpen_12s9r_161", "PuckLayout-leftSideBar": "_PuckLayout-leftSideBar_12s9r_135", "PuckLayout-rightSideBar": "_PuckLayout-rightSideBar_12s9r_134" };
 
-// components/Puck/components/Fields/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/components/Fields/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/components/Fields/styles.module.css#css-module
 var styles_module_default16 = { "PuckFields": "_PuckFields_10bh7_1", "PuckFields--isLoading": "_PuckFields--isLoading_10bh7_6", "PuckFields-loadingOverlay": "_PuckFields-loadingOverlay_10bh7_10", "PuckFields-loadingOverlayInner": "_PuckFields-loadingOverlayInner_10bh7_25", "PuckFields-field": "_PuckFields-field_10bh7_32", "PuckFields--wrapFields": "_PuckFields--wrapFields_10bh7_36" };
 
 // components/Puck/components/Fields/index.tsx
 import { useMemo as useMemo12 } from "react";
 
 // lib/use-resolved-fields.ts
-init_react_import();
 import { useCallback as useCallback13, useEffect as useEffect17, useMemo as useMemo11, useRef as useRef5, useState as useState19 } from "react";
 
 // lib/use-parent.ts
-init_react_import();
 import { useCallback as useCallback12, useContext as useContext9 } from "react";
 var getParent = (itemSelector, pathData, data) => {
   var _a;
@@ -5526,7 +5253,6 @@ var useParent = () => {
 };
 
 // lib/use-on-value-change.ts
-init_react_import();
 import { useRef as useRef4, useEffect as useEffect16 } from "react";
 function useOnValueChange(value, onChange, compare = Object.is, deps = []) {
   const tracked = useRef4(value);
@@ -5540,7 +5266,6 @@ function useOnValueChange(value, onChange, compare = Object.is, deps = []) {
 }
 
 // lib/selector-is.ts
-init_react_import();
 var selectorIs = (a, b) => (a == null ? void 0 : a.zone) === (b == null ? void 0 : b.zone) && (a == null ? void 0 : a.index) === (b == null ? void 0 : b.index);
 
 // lib/use-resolved-fields.ts
@@ -5783,18 +5508,10 @@ var Fields = ({ wrapFields = true }) => {
   );
 };
 
-// components/Puck/components/Components/index.tsx
-init_react_import();
-
 // lib/use-component-list.tsx
-init_react_import();
 import { useEffect as useEffect18, useState as useState20 } from "react";
 
-// components/ComponentList/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ComponentList/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ComponentList/styles.module.css#css-module
 var styles_module_default17 = { "ComponentList": "_ComponentList_odh9d_1", "ComponentList--isExpanded": "_ComponentList--isExpanded_odh9d_5", "ComponentList-content": "_ComponentList-content_odh9d_9", "ComponentList-title": "_ComponentList-title_odh9d_17", "ComponentList-titleIcon": "_ComponentList-titleIcon_odh9d_53" };
 
 // components/ComponentList/index.tsx
@@ -5935,11 +5652,9 @@ var Components = () => {
 };
 
 // components/Puck/components/Preview/index.tsx
-init_react_import();
 import { useCallback as useCallback14, useEffect as useEffect20, useRef as useRef7, useMemo as useMemo14 } from "react";
 
 // components/AutoFrame/index.tsx
-init_react_import();
 import {
   createContext as createContext5,
   useContext as useContext10,
@@ -6200,12 +5915,10 @@ function AutoFrame(_a) {
 AutoFrame.displayName = "AutoFrame";
 var AutoFrame_default = AutoFrame;
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/components/Preview/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/components/Preview/styles.module.css#css-module
 var styles_module_default18 = { "PuckPreview": "_PuckPreview_z2rgu_1", "PuckPreview-frame": "_PuckPreview-frame_z2rgu_6" };
 
 // components/Render/index.tsx
-init_react_import();
 import { jsx as jsx32 } from "react/jsx-runtime";
 function Render({
   config,
@@ -6369,14 +6082,7 @@ var Preview2 = ({ id = "puck-preview" }) => {
   );
 };
 
-// components/Puck/components/Outline/index.tsx
-init_react_import();
-
-// lib/area-contains-zones.ts
-init_react_import();
-
 // lib/find-zones-for-area.ts
-init_react_import();
 var findZonesForArea = (data, area) => {
   const { zones = {} } = data;
   const result = Object.keys(zones).filter(
@@ -6393,15 +6099,10 @@ var areaContainsZones = (data, area) => {
   return zones.length > 0;
 };
 
-// components/LayerTree/index.tsx
-init_react_import();
-
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/LayerTree/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/LayerTree/styles.module.css#css-module
 var styles_module_default19 = { "LayerTree": "_LayerTree_1pgw8_1", "LayerTree-zoneTitle": "_LayerTree-zoneTitle_1pgw8_11", "LayerTree-helper": "_LayerTree-helper_1pgw8_17", "Layer": "_Layer_1pgw8_1", "Layer-inner": "_Layer-inner_1pgw8_29", "Layer--containsZone": "_Layer--containsZone_1pgw8_35", "Layer-clickable": "_Layer-clickable_1pgw8_39", "Layer--isSelected": "_Layer--isSelected_1pgw8_61", "Layer-chevron": "_Layer-chevron_1pgw8_77", "Layer--childIsSelected": "_Layer--childIsSelected_1pgw8_78", "Layer-zones": "_Layer-zones_1pgw8_82", "Layer-title": "_Layer-title_1pgw8_96", "Layer-name": "_Layer-name_1pgw8_105", "Layer-icon": "_Layer-icon_1pgw8_111", "Layer-zoneIcon": "_Layer-zoneIcon_1pgw8_116" };
 
 // lib/scroll-into-view.ts
-init_react_import();
 var scrollIntoView = (el) => {
   const oldStyle = __spreadValues({}, el.style);
   el.style.scrollMargin = "256px";
@@ -6415,7 +6116,6 @@ var scrollIntoView = (el) => {
 import { useContext as useContext11 } from "react";
 
 // lib/is-child-of-zone.ts
-init_react_import();
 var isChildOfZone = (item, maybeChild, ctx) => {
   var _a;
   const { data, pathData = {} } = ctx || {};
@@ -6426,7 +6126,6 @@ var isChildOfZone = (item, maybeChild, ctx) => {
 };
 
 // lib/on-scroll-end.ts
-init_react_import();
 var onScrollEnd = (frame, cb) => {
   let scrollTimeout;
   const callback = function() {
@@ -6614,7 +6313,6 @@ var Outline = () => {
 };
 
 // lib/use-puck-history.ts
-init_react_import();
 import { useHotkeys } from "react-hotkeys-hook";
 function usePuckHistory({
   dispatch,
@@ -6693,7 +6391,6 @@ function usePuckHistory({
 }
 
 // lib/use-history-store.ts
-init_react_import();
 import { useState as useState22 } from "react";
 import { useDebouncedCallback as useDebouncedCallback3 } from "use-debounce";
 var EMPTY_HISTORY_INDEX = 0;
@@ -6743,14 +6440,7 @@ function useHistoryStore(initialHistory) {
   };
 }
 
-// components/Puck/components/Canvas/index.tsx
-init_react_import();
-
-// ../../node_modules/css-box-model/dist/css-box-model.esm.js
-init_react_import();
-
-// ../../node_modules/tiny-invariant/dist/esm/tiny-invariant.js
-init_react_import();
+// node_modules/tiny-invariant/dist/esm/tiny-invariant.js
 var isProduction = process.env.NODE_ENV === "production";
 var prefix = "Invariant failed";
 function invariant(condition, message) {
@@ -6765,7 +6455,7 @@ function invariant(condition, message) {
   throw new Error(value);
 }
 
-// ../../node_modules/css-box-model/dist/css-box-model.esm.js
+// node_modules/css-box-model/dist/css-box-model.esm.js
 var getRect = function getRect2(_ref) {
   var top = _ref.top, right = _ref.right, bottom = _ref.bottom, left = _ref.left;
   var width = right - left;
@@ -6875,11 +6565,9 @@ import {
 } from "react";
 
 // components/ViewportControls/index.tsx
-init_react_import();
 import { useEffect as useEffect21, useMemo as useMemo16, useState as useState23 } from "react";
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ViewportControls/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ViewportControls/styles.module.css#css-module
 var styles_module_default20 = { "ViewportControls": "_ViewportControls_g1wgg_1", "ViewportControls-divider": "_ViewportControls-divider_g1wgg_15", "ViewportControls-zoomSelect": "_ViewportControls-zoomSelect_g1wgg_21", "ViewportButton--isActive": "_ViewportButton--isActive_g1wgg_34", "ViewportButton-inner": "_ViewportButton-inner_g1wgg_34" };
 
 // components/ViewportControls/index.tsx
@@ -7017,12 +6705,10 @@ var ViewportControls = ({
   ] });
 };
 
-// css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/components/Canvas/styles.module.css#css-module
-init_react_import();
+// css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/components/Canvas/styles.module.css#css-module
 var styles_module_default21 = { "PuckCanvas": "_PuckCanvas_18jay_1", "PuckCanvas-controls": "_PuckCanvas-controls_18jay_16", "PuckCanvas-inner": "_PuckCanvas-inner_18jay_21", "PuckCanvas-root": "_PuckCanvas-root_18jay_30", "PuckCanvas--ready": "_PuckCanvas--ready_18jay_55", "PuckCanvas-loader": "_PuckCanvas-loader_18jay_60", "PuckCanvas--showLoader": "_PuckCanvas--showLoader_18jay_70" };
 
 // lib/get-zoom-config.ts
-init_react_import();
 var RESET_ZOOM_SMALLER_THAN_FRAME = true;
 var getZoomConfig = (uiViewport, frame, zoom) => {
   const box = getBox(frame);
@@ -7193,11 +6879,9 @@ var Canvas = () => {
 };
 
 // lib/use-loaded-overrides.ts
-init_react_import();
 import { useMemo as useMemo18 } from "react";
 
 // lib/load-overrides.ts
-init_react_import();
 var loadOverrides = ({
   overrides,
   plugins
@@ -7239,12 +6923,10 @@ var useLoadedOverrides = ({
 };
 
 // components/DefaultOverride/index.tsx
-init_react_import();
 import { Fragment as Fragment14, jsx as jsx38 } from "react/jsx-runtime";
 var DefaultOverride = ({ children }) => /* @__PURE__ */ jsx38(Fragment14, { children });
 
 // lib/use-inject-css.ts
-init_react_import();
 import { useEffect as useEffect23, useState as useState25 } from "react";
 var styles = ``;
 var useInjectStyleSheet = (initialStyles, iframeEnabled) => {
@@ -7271,7 +6953,6 @@ var useInjectGlobalCss = (iframeEnabled) => {
 };
 
 // lib/use-preview-mode-hotkeys.ts
-init_react_import();
 import { useCallback as useCallback17 } from "react";
 import { useHotkeys as useHotkeys2 } from "react-hotkeys-hook";
 var usePreviewModeHotkeys = (dispatch, iframeEnabled) => {
@@ -7630,7 +7311,7 @@ function Puck({
                                 onPublish && onPublish(data);
                               },
                               icon: /* @__PURE__ */ jsx39(Globe, { size: "14px" }),
-                              children: "Publish"
+                              children: "Kaydet"
                             }
                           ) }),
                           setMenuOpen
@@ -7641,8 +7322,8 @@ function Puck({
                 }
               ),
               /* @__PURE__ */ jsxs20("div", { className: getLayoutClassName("leftSideBar"), children: [
-                /* @__PURE__ */ jsx39(SidebarSection, { title: "Components", noBorderTop: true, children: /* @__PURE__ */ jsx39(Components, {}) }),
-                /* @__PURE__ */ jsx39(SidebarSection, { title: "Outline", children: /* @__PURE__ */ jsx39(Outline, {}) })
+                /* @__PURE__ */ jsx39(SidebarSection, { title: "Mod\xFCller", noBorderTop: true, children: /* @__PURE__ */ jsx39(Components, {}) }),
+                /* @__PURE__ */ jsx39(SidebarSection, { title: "Sayafa Ana Hatlar\u0131", children: /* @__PURE__ */ jsx39(Outline, {}) })
               ] }),
               /* @__PURE__ */ jsx39(Canvas, {}),
               /* @__PURE__ */ jsx39("div", { className: getLayoutClassName("rightSideBar"), children: /* @__PURE__ */ jsx39(
@@ -7669,7 +7350,6 @@ Puck.Outline = Outline;
 Puck.Preview = Preview2;
 
 // lib/migrate.ts
-init_react_import();
 var migrations = [
   // Migrate root to root.props
   (data) => {
@@ -7692,7 +7372,6 @@ function migrate(data) {
 }
 
 // lib/transform-props.ts
-init_react_import();
 function transformProps(data, propTransforms) {
   const mapItem = (item) => {
     if (propTransforms[item.type]) {
@@ -7726,7 +7405,6 @@ function transformProps(data, propTransforms) {
 }
 
 // lib/use-puck.ts
-init_react_import();
 var usePuck = () => {
   const {
     state: appState,
@@ -7784,13 +7462,6 @@ export {
   usePuck
 };
 /*! Bundled license information:
-
-classnames/index.js:
-  (*!
-  	Copyright (c) 2018 Jed Watson.
-  	Licensed under the MIT License (MIT), see
-  	http://jedwatson.github.io/classnames
-  *)
 
 lucide-react/dist/esm/shared/src/utils.js:
   (**

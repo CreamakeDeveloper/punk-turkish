@@ -1,17 +1,12 @@
 import {
   __spreadProps,
   __spreadValues,
-  init_react_import,
   resolveAllData,
   rootDroppableId,
   setupZone
-} from "./chunk-CHWFBYEM.mjs";
-
-// rsc.tsx
-init_react_import();
+} from "./chunk-OMQWZ6H2.mjs";
 
 // components/ServerRender/index.tsx
-init_react_import();
 import { Fragment, jsx } from "react/jsx-runtime";
 function DropZoneRender({
   zone,

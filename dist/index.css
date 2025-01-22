@@ -140,7 +140,7 @@
   min-height: 100vh;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ActionBar/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ActionBar/styles.module.css/#css-module-data */
 ._ActionBar_194sn_1 {
   align-items: center;
   cursor: default;
@@ -224,7 +224,7 @@
   margin: 0;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/AutoField/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/AutoField/styles.module.css/#css-module-data */
 ._InputWrapper_1h1p1_1 + ._InputWrapper_1h1p1_1 {
   margin-top: 12px;
 }
@@ -369,7 +369,7 @@ textarea._Input-input_1h1p1_26 {
   margin-bottom: -4px;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/AutoField/fields/ArrayField/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/AutoField/fields/ArrayField/styles.module.css/#css-module-data */
 ._ArrayField_1jcbq_5 {
   display: flex;
   flex-direction: column;
@@ -529,7 +529,7 @@ textarea._Input-input_1h1p1_26 {
   opacity: 1;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/IconButton/IconButton.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/IconButton/IconButton.module.css/#css-module-data */
 ._IconButton_swpni_1 {
   align-items: center;
   background: transparent;
@@ -571,7 +571,7 @@ textarea._Input-input_1h1p1_26 {
   color: var(--puck-color-grey-07);
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Loader/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Loader/styles.module.css/#css-module-data */
 @keyframes _loader-animation_nacdm_1 {
   0% {
     transform: rotate(0deg) scale(1);
@@ -593,7 +593,7 @@ textarea._Input-input_1h1p1_26 {
   animation-fill-mode: both;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/DragIcon/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/DragIcon/styles.module.css/#css-module-data */
 ._DragIcon_17p8x_1 {
   color: var(--puck-color-grey-05);
   cursor: grab;
@@ -610,7 +610,7 @@ textarea._Input-input_1h1p1_26 {
   }
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ExternalInput/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ExternalInput/styles.module.css/#css-module-data */
 ._ExternalInput-actions_8wgzm_1 {
   display: flex;
 }
@@ -896,7 +896,7 @@ textarea._Input-input_1h1p1_26 {
   text-align: right;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Modal/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Modal/styles.module.css/#css-module-data */
 ._Modal_ikbaj_1 {
   background: color-mix(in srgb, var(--puck-color-black) 75%, transparent);
   display: none;
@@ -924,7 +924,7 @@ textarea._Input-input_1h1p1_26 {
   max-height: 90dvh;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Heading/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Heading/styles.module.css/#css-module-data */
 ._Heading_qxrry_1 {
   display: block;
   color: var(--puck-color-black);
@@ -961,7 +961,7 @@ textarea._Input-input_1h1p1_26 {
   font-size: var(--puck-font-size-xs);
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Button/Button.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Button/Button.module.css/#css-module-data */
 ._Button_1t64k_1 {
   appearance: none;
   background: none;
@@ -1050,7 +1050,7 @@ textarea._Input-input_1h1p1_26 {
   padding-left: 8px;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/AutoField/fields/ObjectField/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/AutoField/fields/ObjectField/styles.module.css/#css-module-data */
 ._ObjectField_1ua3y_5 {
   display: flex;
   flex-direction: column;
@@ -1065,7 +1065,7 @@ textarea._Input-input_1h1p1_26 {
   padding: 16px 15px;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Drawer/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Drawer/styles.module.css/#css-module-data */
 ._Drawer_fkqfo_1 {
   display: flex;
   flex-direction: column;
@@ -1124,7 +1124,7 @@ textarea._Input-input_1h1p1_26 {
   white-space: nowrap;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/DraggableComponent/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/DraggableComponent/styles.module.css/#css-module-data */
 ._DraggableComponent_1ukn8_1 {
   position: absolute;
   pointer-events: none;
@@ -1228,7 +1228,7 @@ textarea._Input-input_1h1p1_26 {
   outline-offset: -2px !important;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/DropZone/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/DropZone/styles.module.css/#css-module-data */
 ._DropZone_kmkdc_1 {
   --resize-animation-ms: 150ms;
   position: relative;
@@ -1283,7 +1283,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   opacity: 0 !important;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/SidebarSection/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/SidebarSection/styles.module.css/#css-module-data */
 ._SidebarSection_125qe_1 {
   display: flex;
   position: relative;
@@ -1369,7 +1369,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   opacity: 0.8;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/MenuBar/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/MenuBar/styles.module.css/#css-module-data */
 ._MenuBar_8pf8c_1 {
   background-color: var(--puck-color-white);
   border-bottom: 1px solid var(--puck-color-grey-09);
@@ -1413,7 +1413,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   display: flex;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/styles.module.css/#css-module-data */
 ._Puck_12s9r_19 {
   --puck-space-px: 16px;
   font-family: var(--puck-font-family);
@@ -1550,7 +1550,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   overflow-y: auto;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/components/Fields/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/components/Fields/styles.module.css/#css-module-data */
 ._PuckFields_10bh7_1 {
   position: relative;
   font-family: var(--puck-font-family);
@@ -1592,7 +1592,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   margin-top: 8px;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ComponentList/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ComponentList/styles.module.css/#css-module-data */
 ._ComponentList_odh9d_1 {
   max-width: 100%;
 }
@@ -1641,7 +1641,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   margin-left: auto;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/components/Preview/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/components/Preview/styles.module.css/#css-module-data */
 ._PuckPreview_z2rgu_1 {
   position: relative;
   height: 100%;
@@ -1652,7 +1652,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   width: 100%;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/LayerTree/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/LayerTree/styles.module.css/#css-module-data */
 ._LayerTree_1pgw8_1 {
   color: var(--puck-color-grey-03);
   font-family: var(--puck-font-family);
@@ -1755,7 +1755,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   margin-top: 4px;
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/ViewportControls/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/ViewportControls/styles.module.css/#css-module-data */
 ._ViewportControls_g1wgg_1 {
   display: flex;
   background: var(--puck-color-grey-11);
@@ -1789,7 +1789,7 @@ body:has(._DropZone--isAnimating_kmkdc_70:empty) [data-puck-overlay] {
   color: var(--puck-color-azure-04);
 }
 
-/* css-module:/home/dev/Masaüstü/projeler/puck/packages/core/components/Puck/components/Canvas/styles.module.css/#css-module-data */
+/* css-module:/home/dev/Masaüstü/projeler/punk-turkish/components/Puck/components/Canvas/styles.module.css/#css-module-data */
 ._PuckCanvas_18jay_1 {
   background: var(--puck-color-grey-11);
   display: flex;

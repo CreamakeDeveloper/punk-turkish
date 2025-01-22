@@ -72,7 +72,7 @@ __export(rsc_exports, {
 });
 module.exports = __toCommonJS(rsc_exports);
 
-// ../tsup-config/react-import.js
+// tsup-config/react-import.js
 var import_react = __toESM(require("react"));
 
 // lib/root-droppable-id.ts

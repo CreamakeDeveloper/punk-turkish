@@ -513,7 +513,7 @@ export function Puck<
                                   }}
                                   icon={<Globe size="14px" />}
                                 >
-                                  Publish
+                                  Kaydet
                                 </Button>
                               </CustomHeaderActions>
                             )}
@@ -524,10 +524,10 @@ export function Puck<
                     </header>
                   </CustomHeader>
                   <div className={getLayoutClassName("leftSideBar")}>
-                    <SidebarSection title="Components" noBorderTop>
+                    <SidebarSection title="Modüller" noBorderTop>
                       <Components />
                     </SidebarSection>
-                    <SidebarSection title="Outline">
+                    <SidebarSection title="Sayafa Ana Hatları">
                       <Outline />
                     </SidebarSection>
                   </div>
